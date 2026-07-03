@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>レポートの活用方法｜LENKETSU</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F0F4F8; --title:#0D1B2A; --body:#1A233A;
+    --accent:#1B5FAB; --sub:#26C5DA;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--body);font-family:'Noto Sans JP',"Hiragino Sans",sans-serif;line-height:1.85;font-size:15px;}
+  .wrap{max-width:720px;margin:0 auto;padding:0 18px 60px;}
+
+  header{background:linear-gradient(135deg,#0D1B2A 0%,#1B5FAB 80%,#26C5DA 100%);color:#fff;padding:38px 0 30px;}
+  header .wrap{padding-bottom:0;}
+  header .brand{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--sub);}
+  header h1{font-size:24px;font-weight:900;line-height:1.4;margin-top:8px;}
+  header p.lead{margin-top:10px;font-size:13.5px;opacity:.92;}
+  header .badge{display:inline-block;background:rgba(38,197,218,.22);border:1px solid var(--sub);border-radius:4px;padding:2px 12px;font-size:11.5px;margin-top:14px;}
+
+  h2{font-size:19px;font-weight:900;color:var(--title);margin:44px 0 14px;padding-left:12px;border-left:6px solid var(--accent);line-height:1.5;}
+  h3{font-size:16px;font-weight:700;color:var(--accent);margin:26px 0 10px;}
+  p{margin-bottom:14px;}
+  b,strong{color:var(--title);}
+
+  .card{background:#fff;border-radius:10px;padding:18px 20px;margin-bottom:16px;box-shadow:0 1px 4px rgba(13,27,42,.07);}
+  .lead-card{background:#fff;border-radius:10px;padding:20px 22px;margin-top:28px;border-top:4px solid var(--sub);box-shadow:0 1px 4px rgba(13,27,42,.07);}
+  .lead-card ol{padding-left:22px;}
+  .lead-card li{margin-bottom:6px;}
+
+  .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:8px;}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;font-size:13.5px;min-width:420px;}
+  th{background:var(--title);color:#fff;font-weight:700;padding:9px 12px;text-align:left;white-space:nowrap;}
+  td{padding:9px 12px;border-bottom:1px solid #e5ecf2;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.k{white-space:nowrap;font-weight:700;color:var(--accent);}
+
+  .step{background:#fff;border-radius:10px;margin-bottom:14px;box-shadow:0 1px 4px rgba(13,27,42,.07);overflow:hidden;}
+  .step .shead{display:flex;align-items:center;gap:10px;background:var(--title);color:#fff;padding:10px 16px;}
+  .step .snum{background:var(--sub);color:var(--title);font-weight:900;font-size:12px;border-radius:4px;padding:2px 10px;white-space:nowrap;}
+  .step .stitle{font-weight:700;font-size:14.5px;line-height:1.4;}
+  .step .sbody{padding:16px 18px;}
+  .step .sbody p:last-child{margin-bottom:0;}
+
+  ul.plain{padding-left:20px;margin-bottom:14px;}
+  ul.plain li{margin-bottom:6px;}
+
+  .quote{background:#f3f8ff;border-left:4px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14px;margin-bottom:14px;}
+
+  .note{font-size:12px;color:#5a6a7a;margin-top:6px;}
+
+  .cta{background:linear-gradient(135deg,#0D1B2A 0%,#1B5FAB 100%);color:#fff;border-radius:12px;padding:26px 22px;margin-top:40px;}
+  .cta h2{border:none;color:#fff;padding-left:0;margin:0 0 12px;font-size:19px;}
+  .cta ul{padding-left:20px;margin-bottom:14px;}
+  .cta li{margin-bottom:6px;font-size:14px;}
+  .cta .hl{color:var(--sub);font-weight:700;}
+  .cta p.last{margin-bottom:0;font-size:14px;}
+
+  footer{text-align:center;font-size:11.5px;color:#8a97a5;padding:26px 18px 40px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">LENKETSU</div>
+    <h1>レポートの活用方法</h1>
+    <p class="lead">統合レポートで、数字から"なぜ"を語れるようになるガイド</p>
+    <span class="badge">LINE登録者限定特典</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="lead-card">
+  <h3 style="margin-top:0;">はじめに — このガイドでできるようになること</h3>
+  <p>カート・GA4・広告管理画面・SNS…バラバラなデータを手作業でつなぎ合わせないと"なぜ"が語れない状態。悪いのは代理店でもあなたでもなく、この「状態」です。</p>
+  <p>このガイドは、LENKETSUの統合レポートを使って、</p>
+  <ol>
+    <li><b>月次30分</b>で「売上がなぜ動いたか」を特定する</li>
+    <li>特定した"なぜ"を<b>そのまま社内報告に使う</b></li>
+    <li>代理店との定例を<b>「報告を聞く場」から「配分を決める場」に変える</b></li>
+  </ol>
+  <p style="margin-bottom:0;">ための実践手順をまとめたものです。トライアル中の方は、初回レポートが届いたその日からこの手順で使えます。</p>
+</div>
+
+<h2>1. 統合レポートの全体像 — 10タブは「答えられる問い」で覚える</h2>
+<p>タブの機能名を覚える必要はありません。<b>「どの問いに答えたいか」でタブを選ぶ</b>のが正しい使い方です。</p>
+
+<div class="tablewrap">
+<table>
+  <tr><th>#</th><th>タブ</th><th>答えられる問い</th></tr>
+  <tr><td>1</td><td class="k">売上サマリ</td><td>今月の売上、なぜ上がった／落ちた？（集客・転換率・客単価のどこが原因か）</td></tr>
+  <tr><td>2</td><td class="k">商品別</td><td>どの商品が伸びていて、どの商品が失速しているか？</td></tr>
+  <tr><td>3</td><td class="k">広告</td><td>広告費は、どの媒体（Meta/Google/Yahoo!）に寄せるべきか？</td></tr>
+  <tr><td>4</td><td class="k">販促（流入別）</td><td>セール・キャンペーンは、どの流入経路にどれだけ効いたか？</td></tr>
+  <tr><td>5</td><td class="k">CRM</td><td>今の売上は新規とリピートのどちらが支えているか？（コホート）</td></tr>
+  <tr><td>6</td><td class="k">顧客（RFM/LTV）</td><td>優良顧客は誰で、離脱しかけているのは誰か？</td></tr>
+  <tr><td>7</td><td class="k">認知施策</td><td>PR・ギフティングは、その後の売上に波及したか？</td></tr>
+  <tr><td>8</td><td class="k">指名検索</td><td>インフルエンサー施策は指名検索を動かしたか？ 投資を続けるべきか？</td></tr>
+  <tr><td>9</td><td class="k">SNS日次</td><td>SNSの盛り上がりと売上は連動しているか？</td></tr>
+  <tr><td>10</td><td class="k">チャネル回遊</td><td>顧客はどの経路をたどって購入に至ったか？</td></tr>
+</table>
+</div>
+<p class="note">※タブ構成はプラン・接続データにより異なります。詳細は導入時にご案内します。</p>
+
+<h2>2. 月次30分ルーティン — 最初に見る「3つの数字」から始める</h2>
+<p>月初、管理画面を何個も開く必要はもうありません。<b>売上サマリだけ開いて、この順番で30分</b>です。</p>
+
+<div class="step">
+  <div class="shead"><span class="snum">STEP 1</span><span class="stitle">売上の変化を3つに分解する（10分）</span></div>
+  <div class="sbody">
+    <p>売上サマリで最初に見るのは、この3つだけ。</p>
+    <ul class="plain">
+      <li><b>セッション（集客）</b> — 人は来ているか</li>
+      <li><b>CVR（転換率）</b> — 来た人は買っているか</li>
+      <li><b>AOV（客単価）</b> — 買った人はいくら使っているか</li>
+    </ul>
+    <p>売上 ＝ 集客 × 転換率 × 客単価。売上が動いたとき、<b>この3つのどれが動いたのか</b>を先に特定します。「売上が落ちた」で止まらず「集客が落ちた」まで言えれば、原因タブは自動的に決まります。</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="shead"><span class="snum">STEP 2</span><span class="stitle">原因のタブに潜る（10分）</span></div>
+  <div class="sbody">
+    <div class="tablewrap">
+    <table>
+      <tr><th>STEP 1の結果</th><th>次に開くタブ</th><th>見るポイント</th></tr>
+      <tr><td class="k">集客が落ちた</td><td>広告 → 販促</td><td>どの媒体・どの流入経路が減ったか。広告費とセットで見る</td></tr>
+      <tr><td class="k">転換率が落ちた</td><td>商品別 → 販促</td><td>特定商品の失速か、流入の質の変化か</td></tr>
+      <tr><td class="k">客単価が落ちた</td><td>商品別 → 顧客</td><td>低単価商品への偏りか、セール依存か</td></tr>
+      <tr><td class="k">伸びたが利益が不安</td><td>CRM → 顧客</td><td>新規偏重になっていないか。リピートが積み上がっているか</td></tr>
+    </table>
+    </div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="shead"><span class="snum">STEP 3</span><span class="stitle">"なぜ"を1行にして、打ち手を決める（10分）</span></div>
+  <div class="sbody">
+    <p>STEP 1〜2の結果を、次のフォーマットで1行にまとめます。</p>
+    <div class="quote">「売上が◯%減。要因は<b>集客減</b>、中でも<b>Meta広告の配信減</b>。リピート売上は横ばいなので、既存顧客は維持できている。打ち手はMetaの予算戻し＋販促の代替流入強化」</div>
+    <p style="margin-bottom:0;">この1行がそのまま<b>役員会・経営会議の報告</b>になります。「効いている気がする」ではなく、データで"なぜ"を語る側に回る——それがこのルーティンのゴールです。</p>
+  </div>
+</div>
+
+<h2>3. シーン別の使い方</h2>
+
+<div class="card">
+  <h3 style="margin-top:0;">① 役員会・経営会議 — ダッシュボードをそのまま資料にする</h3>
+  <p style="margin-bottom:0;">集計し直してスライドに転記する必要はありません。売上サマリ＋STEP 3の1行サマリで報告し、質問が出たら該当タブをその場で開く。<b>「資料をまとめる係」から「数字で語る責任者」へ</b>の切り替えは、この運用から始まります。</p>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0;">② 代理店との定例 — ROASの先を聞く「3つの質問」</h3>
+  <p>代理店レポートのROASを眺めるだけの定例を、この質問で変えます。</p>
+  <ol style="padding-left:22px;">
+    <li style="margin-bottom:8px;">「この媒体の広告経由の売上は、<b>EC全体の売上・リピートにどう繋がっていますか？</b>」（→統合レポートの広告タブ×CRMタブを見ながら）</li>
+    <li style="margin-bottom:8px;">「新規獲得した顧客の<b>その後の継続</b>はどうですか？」（→コホートを開く）</li>
+    <li style="margin-bottom:8px;">「来月、<b>予算をどこからどこに動かすべき</b>だと考えていますか？」（→媒体横並び比較を見ながら）</li>
+  </ol>
+  <p style="margin-bottom:0;">代理店に嫌がられる質問ではありません。むしろ「数字が見えている発注者」として、代理店側の提案の質も上がります。</p>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0;">③ 予算配分の判断 — 「新規 vs リピート」を先に決める</h3>
+  <p style="margin-bottom:0;">広告の媒体配分の前に、CRMタブで<b>新規とリピートの売上構成</b>を確認します。リピートが積み上がっていないのに新規獲得に投資し続けると、穴の空いたバケツに水を注ぐことになります。コホートで「◯月に獲得した顧客がどれだけ残っているか」を見てから、新規投資の量を決めてください。</p>
+</div>
+
+<h2>4. よくあるつまずきと対処</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>つまずき</th><th>対処</th></tr>
+  <tr><td class="k" style="white-space:normal;">「数字が多すぎてどこから見ればいいか分からない」</td><td>売上サマリの3つの数字（集客・CVR・AOV）以外は最初は見ない。慣れるまでSTEP 1だけで十分です</td></tr>
+  <tr><td class="k" style="white-space:normal;">「GA4の数字と合わない気がする」</td><td>計測の定義（セッション・CVの数え方）が違うためです。統合レポート内で完結して前月比・推移を見るのが正しい使い方です</td></tr>
+  <tr><td class="k" style="white-space:normal;">「毎日見る時間がない」</td><td>毎日見る必要はありません。<b>週次5分（売上サマリのみ）＋月次30分</b>で設計されています</td></tr>
+  <tr><td class="k" style="white-space:normal;">「打ち手までは決めきれない」</td><td>STEP 3の1行サマリまで作れば十分です。打ち手の相談は無料トライアル中でもお気軽にどうぞ</td></tr>
+</table>
+</div>
+
+<div class="cta">
+  <h2>5. 次の一歩 — 無料トライアルで「自社の数字」で試す</h2>
+  <p style="font-size:14px;">このガイドの手順は、デモデータではなく<span class="hl">自社の数字</span>で回して初めて意味があります。</p>
+  <ul>
+    <li><span class="hl">無料トライアル: 2週間</span>（ご希望の方は1週間延長可＝最大3週間）</li>
+    <li>必要なのは<span class="hl">APIキーの入力だけ</span>。エンジニア不要・構築7日・初回レポート10日</li>
+    <li>最短で、<span class="hl">来月の月次報告から変わります</span></li>
+  </ul>
+  <p class="last">お申し込み・ご質問は、<b>LINEトークに「トライアル希望」と送信</b>してください。</p>
+</div>
+
+</div>
+
+<footer>
+  本資料はLINE登録者限定の特典です。数値例はすべて説明用の例です。<br>
+  © LENKETSU
+</footer>
+
+</body>
+</html>
